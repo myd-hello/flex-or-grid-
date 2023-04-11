@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>骰子</title>
+  <link rel="stylesheet" href="dice.css">
+</head>
+
+<body>
+
+  <div class="buttonList">
+    <span>row</span>
+    <span>column</span>
+    <span>2/column</span>
+    <span>3/column</span>
+  </div>
+
+  <div class="box" id="app">
+    <div>
+      <i></i>
+    </div>
+    <div>
+      <i></i>
+      <i></i>
+    </div>
+    <div>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+
+  <script>
+    /*
+      row: grid-template-columns: repeat(6, 1fr)
+      column: grid-template-columns: 1fr;
+      2/column: grid-template-columns: 1fr 1fr;
+      3/column: grid-template-columns: 1fr 1fr 1fr;
+    */
+    let button = document.querySelector(".buttonList");
+    console.log(button)
+    let box = document.getElementById("app");
+    button.onclick = function (e){
+      const { innerHTML, innerText } = e.target;
+      switch(innerText){
+        case 'row':
+        box.style.gridTemplateColumns = 'repeat(6, 1fr)';
+        break;
+        
+        case 'column':
+        box.style.gridTemplateColumns = '1fr';
+        break;
+        
+        case '2/column':
+        box.style.gridTemplateColumns = '1fr 1fr';
+        break;
+        
+        case '3/column':
+        box.style.gridTemplateColumns = '1fr 1fr 1fr';
+        break;
+
+        default:
+        box.style.gridTemplateColumns = 'repeat(6, 1fr)';
+        break;
+      }
+    }
+  </script>
+</body>
+
+</html>

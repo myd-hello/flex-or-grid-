@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.buttonList {
+  display: flex;
+}
+
+.buttonList > span {
+  margin:0 10px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #2797eb;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body {
+  background: #85ab4e;
+}
+
+#app {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid #999;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.box > span, 
+.column > span,
+.row > span
+{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.dice1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dice3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dice3 .item:nth-child(2) {
+  align-self: center;
+  margin: 0;
+}
+
+.dice3 .item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.dice4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.dice4 .column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dice5 .row{
+  flex-basis: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dice5 .row > span{
+  margin: 0 10px;
+}
+
+.dice5 .row:nth-child(2){
+  justify-content: center;
+}
+
+.dice6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dice6 .row{
+  flex-basis: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dice6 .row > span{
+  margin: 0 10px;
+}

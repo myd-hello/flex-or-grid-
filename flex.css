@@ -1,0 +1,75 @@
+.box {
+  margin: auto;
+  border: 1px solid #999;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.box > div {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #e67214;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* .box > div:nth-child(4) {
+  margin-top: 20px;
+} */
+
+/* 容器的一些属性 */
+.box {
+  display: flex;
+
+  /* flex-direction */
+  /* flex-direction: row; */
+
+  /* flex-warp */
+  flex-wrap: wrap;
+
+  /* flex-flow */
+  /* flex-flow: row wrap; */
+
+  /* justify-content */
+  /* justify-content: flex-start; */
+
+  /* align-items */
+  /* baseline 与第一个项目的文本对齐 */
+  /* align-items: baseline; */
+
+  /* align-content */
+  align-content: space-between;
+}
+
+/* 项目的一些常用属性 */
+.boxItem{
+  border: 1px solid #999;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+.boxItem > div {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #e67214;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* .item1 {
+  flex-grow: 1;
+}
+
+.item2 {
+  flex-grow: 2;
+}
+
+.item3 {
+  flex-grow: 1;
+} */

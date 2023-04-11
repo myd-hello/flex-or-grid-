@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>骰子</title>
+  <link rel="stylesheet" href="dice.css">
+</head>
+
+<body>
+
+  <div class="buttonList">
+    <span>row</span>
+    <span>column-reverse</span>
+    <span>column</span>
+    <span>row-reverse</span>
+  </div>
+
+  <div id="app">
+    <div class="shadow">
+      <div class="box dice1">
+        <span class="item"></span>
+      </div>
+    </div>
+    <div class="box dice2">
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+    <div class="box dice3">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+    <div class="box dice4">
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+    <div class="box dice5">
+      <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="row">
+        <span class="item"></span>
+      </div>
+      <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+    <div class="box dice6">
+      <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let button = document.querySelector(".buttonList");
+    let box = document.getElementById("app");
+    button.onclick = function (e){
+      const { innerHTML, innerText } = e.target;
+      box.style.flexDirection = innerText;
+    }
+  </script>
+</body>
+
+</html>

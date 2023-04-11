@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.buttonList {
+  display: flex;
+}
+
+.buttonList > span {
+  margin:0 10px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #2797eb;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body {
+  background: #85ab4e;
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "a1 a2 a3"
+    "a4 a5 a6"
+    "a7 a8 a9";
+}
+
+i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.box div:nth-child(1) i {
+  grid-area: a5;
+}
+
+.box div:nth-child(2) i {
+  grid-area: a2;
+}
+
+.box div:nth-child(2) i:last-child {
+  grid-area: a8;
+}
+
+.box div:nth-child(3) i:nth-child(1) {
+  grid-area: a1;
+}
+
+.box div:nth-child(3) i:nth-child(2) {
+  grid-area: a5;
+}
+
+.box div:nth-child(3) i:nth-child(3) {
+  grid-area: a9;
+}
+
+.box div:nth-child(4) i:nth-child(1) {
+  grid-area: a1;
+}
+
+.box div:nth-child(4) i:nth-child(2) {
+  grid-area: a3;
+}
+
+.box div:nth-child(4) i:nth-child(3) {
+  grid-area: a7;
+}
+
+.box div:nth-child(4) i:nth-child(4) {
+  grid-area: a9;
+}
+
+.box div:nth-child(5) i:nth-child(1) {
+  grid-area: a1;
+}
+
+.box div:nth-child(5) i:nth-child(2) {
+  grid-area: a3;
+}
+
+.box div:nth-child(5) i:nth-child(3) {
+  grid-area: a5;
+}
+
+.box div:nth-child(5) i:nth-child(4) {
+  grid-area: a7;
+}
+
+.box div:nth-child(5) i:nth-child(5) {
+  grid-area: a9;
+}
+
+.box div:nth-child(6) i:nth-child(1) {
+  grid-area: a1;
+}
+
+.box div:nth-child(6) i:nth-child(2) {
+  grid-area: a3;
+}
+
+.box div:nth-child(6) i:nth-child(3) {
+  grid-area: a4;
+}
+
+.box div:nth-child(6) i:nth-child(4) {
+  grid-area: a6;
+}
+
+.box div:nth-child(6) i:nth-child(5) {
+  grid-area: a7;
+}
+
+.box div:nth-child(6) i:nth-child(6) {
+  grid-area: a9;
+}
