@@ -1,3 +1,6 @@
+## 文档链接
+- https://juejin.cn/post/7215509220749770808#heading-22
+
 ## Flex 布局是什么
 - flex 是 flexible Box 的缩写，意为弹性布局，用来为盒状模型提供最大的灵活性。
 - 任何一个容器可以指定Flex布局。 display: flex
