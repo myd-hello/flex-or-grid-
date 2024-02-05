@@ -3,6 +3,7 @@
   border: 1px solid #999;
   text-align: center;
   height: 500px;
+  width: 200px;
 }
 .container > div {
   /* width: 50px;
@@ -18,8 +19,14 @@
   /* grid-template-columns: repeat(auto, 1fr);
   grid-template-rows: repeat(auto, 1fr); */
 
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  /* grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px); */
+
+  /* grid-auto-flow: row dense; */
+
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-columns: 500px;
 
   /* grid-gap: 5px;
   grid-auto-rows: 50px; */
@@ -27,10 +34,10 @@
   /* grid-auto-rows: 50px; */
 
 
-  grid-template-areas:
+  /* grid-template-areas:
     "a . a"
     "b . b"
-    "c . c";
+    "c . c"; */
 
   /* grid-template-areas:
     ".header . header" 
@@ -58,13 +65,13 @@
 
 
 .item1 {
-  align-self: center;
+  /* align-self: center; */
 }
 
-/* .item2 {
+.item2 {
   grid-row-start: 2;
   grid-row-end: 2;
-} */
+}
 
 /* .item3 {
   grid-column-start: 2;
@@ -96,10 +103,10 @@
   grid-column-end: 3;
 } */
 
-/* .item9 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-} */
+.item9 {
+  grid-row-start: 5;
+  grid-column-start: 3;
+}
 
 /* .item10 {
   grid-column-start: 1;
